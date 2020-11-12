@@ -1,0 +1,12 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.postgre",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.pingan.pahm.common.MyBatisPostgreConfig",
+      "sourceMethod": "customDataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

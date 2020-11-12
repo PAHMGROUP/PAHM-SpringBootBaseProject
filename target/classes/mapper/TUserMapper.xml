@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pingan.pahm.dao.postgre.T_UserMapper">
+    <resultMap id="BaseResultMap" type="com.pingan.pahm.entity.T_User">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="gender" jdbcType="VARCHAR" property="gender"/>
+        <result column="birthday" jdbcType="DATE" property="birthday"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="create_time"/>
+    </resultMap>
+    <select id="getTUser"  resultMap="BaseResultMap">
+        SELECT id,name,password,gender,birthday,create_time
+        FROM t_user
+    </select>
+
+</mapper>
